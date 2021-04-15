@@ -1,0 +1,232 @@
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #0000008c;
+}
+
+/* Header */
+header {
+  background-color: #00cad1;
+}
+
+.topo {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.topo img {
+  width: 140px;
+}
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  padding-left: 30px;
+  font-size: 16px;
+}
+nav a:hover {
+  color: #006d68;
+}
+
+/* Main */
+.container-img {
+  background-image: url('/assets/recepcao.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.container-limit {
+  width: 1024px;
+  margin: 0 auto;
+}
+.container-limit h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 40px;
+}
+
+/************** Estilo global Título e descrição **************/
+
+.container-titulo-descricao {
+  margin: 0 auto;
+  max-width: 1024px;
+  margin-top: 40px;
+}
+.titulo {
+  text-align: center;
+}
+.titulo p {
+  margin-top: 20px;
+  font-size: 14px;
+  padding: 0 25%;
+  margin-bottom: 30px;
+}
+
+/* ************************************************************** */
+
+.container-img-descricao {
+  max-width: 1024px;
+  padding-left: 23%;
+}
+.container-img-descricao img {
+  width: 200px;
+  height: 252px;
+  float: left;
+}
+
+.container-img-descricao h3 {
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 15px;
+  margin-top: 40px;
+}
+.container-img-descricao ul {
+  font-size: 13px;
+  margin-bottom: 100px;
+  margin-top: 30px;
+  display: inline-block;
+  padding-left: 35px;
+}
+
+.container-card {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.card {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-box {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  width: 300px;
+}
+
+.card img {
+  width: 300px;
+  height: 200px;
+}
+
+.card p {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 12px;
+  padding: 5px 0;
+}
+
+/* *************** botao-link ******************* */
+
+.container-botao {
+  margin-top: 30px;
+  text-align: center;
+}
+.botao-link {
+  color: #fff;
+  background-color: #00cad1;
+  font-size: 14px;
+  font-weight: 600;
+
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 5px 20px;
+}
+
+/* ****************** Mapa *********************** */
+.mapa {
+  max-width: 1024px;
+}
+.mapa iframe {
+  width: 100%;
+  height: 350px;
+}
+
+/* ****************** Footer *********************** */
+
+Footer {
+  background-color: #0c6e71;
+  margin-top: 60px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+.rodape {
+  max-width: 1024px;
+  text-align: center;
+}
+.rodape img {
+  width: 100px;
+  margin-top: 20px;
+}
+.rodape p {
+  color: #fff;
+  font-weight: normal;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+/* ****************** Responsividade ******************** */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container-img {
+    height: 400px;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .container-img {
+    height: 300px;
+  }
+  .container-limit h1 {
+    font-size: 34px;
+  }
+  .container-img-descricao {
+    display: none;
+  }
+  .card {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .card-box {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+  .topo {
+    flex-direction: column;
+  }
+  nav {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 100%;
+  }
+  .container-img {
+    height: 200px;
+  }
+  .container-limit h1 {
+    font-size: 28px;
+  }
+  .container-img-descricao {
+    display: none;
+  }
+  .card {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
