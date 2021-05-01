@@ -24,7 +24,7 @@ header {
 .topo img {
   width: 140px;
 }
-nav a {
+.nav-topo a {
   text-decoration: none;
   color: #fff;
   font-weight: 600;
@@ -70,7 +70,7 @@ nav a:hover {
 }
 .titulo p {
   margin-top: 20px;
-  font-size: 14px;
+  font-size: 16px;
   padding: 0 25%;
   margin-bottom: 30px;
 }
@@ -94,7 +94,7 @@ nav a:hover {
   margin-top: 40px;
 }
 .container-img-descricao ul {
-  font-size: 13px;
+  font-size: 14px;
   margin-bottom: 100px;
   margin-top: 30px;
   display: inline-block;
@@ -173,8 +173,95 @@ Footer {
 .rodape p {
   color: #fff;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 16px;
   margin-top: 15px;
+}
+
+/* **************** Página Especialidades *************** */
+.container-nav {
+  margin-top: 20px;
+  text-align: center;
+}
+.container-nav a {
+  color: #0000008c;
+  font-weight: 600;
+  font-size: 18px;
+  text-decoration: none;
+  margin-left: 20px;
+  border-bottom: 2px solid #00cad1;
+}
+.container-nav h2 {
+  margin-top: 30px;
+}
+
+/*********************** Tabelas ************************ */
+.container-especialidade {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.titulo-especialidade {
+  text-align: center;
+
+  width: 560px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.titulo-especialidade h2 {
+  margin-bottom: 20px;
+}
+
+.container-tabela {
+  display: flex;
+
+  max-height: 255px;
+  /*display: grid;
+  grid-template-columns: 310px 714px;
+  grid-template-areas: 'img table';*/
+}
+
+.container-especialidade img {
+  max-width: 310px;
+  width: 100%;
+  height: 255px;
+  object-fit: cover;
+
+  /* grid-area: img;
+  max-width: 310px;
+  width: 100%;
+  height: 255px;
+  object-fit: cover;*/
+}
+
+table {
+  width: 100%;
+  height: 255px;
+  border-collapse: collapse;
+  /* grid-area: table;
+  /*width: 55vw;*/
+  /*height: 40.8vh;
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;*/
+}
+
+th {
+  text-align: left;
+  padding: 10px;
+  background-color: #00cad1;
+  color: #fff;
+}
+
+td {
+  padding-left: 10px;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #fff;
+}
+table tbody tr:nth-child(odd) {
+  background-color: #cdcdcd;
 }
 
 /* ****************** Responsividade ******************** */
@@ -203,6 +290,14 @@ Footer {
   .card-box {
     margin-top: 30px;
   }
+
+  /* Página especialidades */
+  .container-tabela {
+    padding: 0 10px;
+  }
+  .container-especialidade img {
+    display: none;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 425px) {
@@ -211,7 +306,7 @@ Footer {
   }
   nav {
     border-top: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 10px;
+    padding: 10px 0;
     width: 100%;
   }
   .container-img {
@@ -228,5 +323,21 @@ Footer {
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
+  }
+  .card-box {
+    box-shadow: none;
+  }
+  .card img {
+    margin-top: 30px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); /*arrumar*/
+  }
+
+  /* Página especialidades */
+  .titulo-especialidade {
+    width: 100%;
+    padding: 20px;
+  }
+  .container-especialidade img {
+    display: none;
   }
 }
